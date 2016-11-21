@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>TestNG Report</title><style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}</style></head><body><table><tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr><tr><th colspan="7">Suite</th></tr><tr><td><a href="#t0">Test</a></td><td class="num">6</td><td class="num">0</td><td class="num attn">2</td><td class="num">1,337,724</td><td></td><td></td></tr></table><table><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">testScript.NewTest</td><td><a href="#m0">bookMark</a></td><td rowspan="1">1478772793346</td><td rowspan="1">137109</td></tr><tr class="failedeven"><td><a href="#m1">gSticky</a></td><td rowspan="1">1478772502824</td><td rowspan="1">248417</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="6">testScript.NewTest</td><td><a href="#m2">addCollection</a></td><td rowspan="1">1478773556852</td><td rowspan="1">57679</td></tr><tr class="passedeven"><td><a href="#m3">courseManager</a></td><td rowspan="1">1478772350535</td><td rowspan="1">6358</td></tr><tr class="passedeven"><td><a href="#m4">flashcard_Book</a></td><td rowspan="1">1478773382126</td><td rowspan="1">133800</td></tr><tr class="passedeven"><td><a href="#m5">scrollpage</a></td><td rowspan="1">1478772968483</td><td rowspan="1">78096</td></tr><tr class="passedeven"><td><a href="#m6">tableOfContent</a></td><td rowspan="1">1478773082582</td><td rowspan="1">81056</td></tr><tr class="passedeven"><td><a href="#m7">zoom</a></td><td rowspan="1">1478773202847</td><td rowspan="1">79456</td></tr></tbody></table><h2>Test</h2><h3 id="m0">testScript.NewTest#bookMark</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.StaleElementReferenceException: Element not found in the cache - perhaps the page has changed since it was looked up
+Command duration or timeout: 67.55 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 16:57:40&apos;
+System info: host: &apos;8RGPVQ1&apos;, ip: &apos;10.11.17.209&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_101&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=43.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 36119dd9-724a-48a5-ae8f-bfed9d38f3bd
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:85)
+	at baseDemo.Bookmark.bookmark(Bookmark.java:26)
+	at testScript.NewTest.bookMark(NewTest.java:85)
+Caused by: org.openqa.selenium.StaleElementReferenceException: Element not found in the cache - perhaps the page has changed since it was looked up
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 16:57:40&apos;
+System info: host: &apos;8RGPVQ1&apos;, ip: &apos;10.11.17.209&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_101&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.fxdriver.cache.getElementAt(resource://fxdriver/modules/web-element-cache.js:9454)
+	at &lt;anonymous class&gt;.Utils.getElementAt(file:///C:/Users/VIKASH~1.MAG/AppData/Local/Temp/anonymous7019647561042545327webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:9039)
+	at &lt;anonymous class&gt;.fxdriver.preconditions.visible(file:///C:/Users/VIKASH~1.MAG/AppData/Local/Temp/anonymous7019647561042545327webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:10090)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.checkPreconditions_(file:///C:/Users/VIKASH~1.MAG/AppData/Local/Temp/anonymous7019647561042545327webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12644)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/VIKASH~1.MAG/AppData/Local/Temp/anonymous7019647561042545327webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12661)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/VIKASH~1.MAG/AppData/Local/Temp/anonymous7019647561042545327webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:625)
+... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m1">testScript.NewTest#gSticky</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.ElementNotVisibleException: Element is not currently visible and so may not be interacted with
+Command duration or timeout: 60.03 seconds
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 16:57:40&apos;
+System info: host: &apos;8RGPVQ1&apos;, ip: &apos;10.11.17.209&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_101&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=43.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 131c3ce0-8edc-4bb3-a27d-32ba59d31a18
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:85)
+	at baseDemo.GlobalSticky.addGlobalSticky(GlobalSticky.java:49)
+	at testScript.NewTest.gSticky(NewTest.java:70)
+Caused by: org.openqa.selenium.ElementNotVisibleException: Element is not currently visible and so may not be interacted with
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 16:57:40&apos;
+System info: host: &apos;8RGPVQ1&apos;, ip: &apos;10.11.17.209&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_101&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.fxdriver.preconditions.visible(file:///C:/Users/VIKASH~1.MAG/AppData/Local/Temp/anonymous3165305578151628634webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:10092)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.checkPreconditions_(file:///C:/Users/VIKASH~1.MAG/AppData/Local/Temp/anonymous3165305578151628634webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12644)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/VIKASH~1.MAG/AppData/Local/Temp/anonymous3165305578151628634webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12661)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/VIKASH~1.MAG/AppData/Local/Temp/anonymous3165305578151628634webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:625)
+... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m2">testScript.NewTest#addCollection</h3><table class="result"></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m3">testScript.NewTest#courseManager</h3><table class="result"></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m4">testScript.NewTest#flashcard_Book</h3><table class="result"></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m5">testScript.NewTest#scrollpage</h3><table class="result"></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m6">testScript.NewTest#tableOfContent</h3><table class="result"></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m7">testScript.NewTest#zoom</h3><table class="result"></table><p class="totop"><a href="#summary">back to summary</a></p></body></html>
